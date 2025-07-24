@@ -1,0 +1,20 @@
+name: update-awesome-lists
+description: 🔂 GitHub Action to update awesome lists
+author: "Awesome Lists Generator Team <awesomelists@kemikal.io>"
+inputs:
+  list:
+    description: "The name of the awesome list to update"
+    required: false
+    default: "awesome-lists.yaml"
+  debug:
+    description: "Enable debug mode"
+    required: false
+    default: "false"
+
+runs: 
+  using: "docker" 
+  image: "Dockerfile"
+  
+branding:
+  icon: "refresh-cw"
+  color: "blue"
